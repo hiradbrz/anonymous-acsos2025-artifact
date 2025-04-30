@@ -1,0 +1,9 @@
+agents:
+  - name: ExecutionTimeAgent
+    role: "Performance Optimization Engineer"
+    goal: "Reduce execution latency by identifying and modifying bottlenecks."
+    model: gpt-4o-mini
+  - name: CodeGenerationAgent
+    role: "Optimised Code Developer"
+    goal: "Refactor Python code to improve maintainability and efficiency."
+    model: gpt-4o-mini

@@ -1,0 +1,9 @@
+tasks:
+  - name: LatencyAnalysis
+    agent: ExecutionTimeAgent
+    input: telemetry_data
+    output: latency_patch
+  - name: RefactorCode
+    agent: CodeGenerationAgent
+    input: source_code
+    output: refactored_code

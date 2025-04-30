@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bpmn:definitions xmlns:bpmn="http://www.omg.org/spec/BPMN/20100524/MODEL">
+  <bpmn:process id="fx_hft_pipeline" isExecutable="true">
+    <bpmn:startEvent id="StartEvent_1"/>
+    <bpmn:task id="FeatureEngineering" name="Feature Engineering"/>
+    <bpmn:task id="SignalGeneration" name="Signal Generation"/>
+    <bpmn:task id="OrderExecution" name="Order Execution"/>
+    <bpmn:endEvent id="EndEvent_1"/>
+    <bpmn:sequenceFlow sourceRef="StartEvent_1" targetRef="FeatureEngineering"/>
+    <bpmn:sequenceFlow sourceRef="FeatureEngineering" targetRef="SignalGeneration"/>
+    <bpmn:sequenceFlow sourceRef="SignalGeneration" targetRef="OrderExecution"/>
+    <bpmn:sequenceFlow sourceRef="OrderExecution" targetRef="EndEvent_1"/>
+  </bpmn:process>
+</bpmn:definitions>

@@ -1,0 +1,12 @@
+
+{
+  "pipeline": "FX01",
+  "metrics": {
+    "latency_reduction_ms": 300,
+    "cpu_reduction_percent": 13,
+    "mi_before": 72,
+    "mi_after": 89,
+    "utc_before": 72,
+    "utc_after": 90
+  }
+}
